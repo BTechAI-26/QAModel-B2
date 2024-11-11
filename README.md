@@ -44,3 +44,22 @@ Format for the generated output:
 1. Performed tokenization and created a vocabulary.
 2. Developed a basic structure of a Transformer model.
 3. Used a Naive Bayes Classifier for text classification.
+
+
+## Group 3
+
+### Tasks Performed:
+
+1. **Data Preparation**:
+   - Reading and preprocessing the data (CSV file)
+   - Extracting question and answer pairs
+   - Splitting data into training and testing sets
+
+2. **Model Selection and Training**:
+   - Using a pre-trained BERT model for sequence classification
+   - Creating a custom dataset class for the specific task
+   - Training the model using an appropriate optimizer (AdamW) and loss function
+
+3. **Training Loop**:
+   - Iterating over batches
+   - Forward pass, loss calculation, backpropagation, and weight updates
