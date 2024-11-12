@@ -63,3 +63,17 @@ Format for the generated output:
 3. **Training Loop**:
    - Iterating over batches
    - Forward pass, loss calculation, backpropagation, and weight updates
+
+### Group 4
+### Tasks Performed
+
+**Training Loop:**
+Looped over the specified number of epochs.
+For each epoch:
+Train the Model: Called the train_epoch function to perform forward and backward propagation, updating model weights based on training data.
+Evaluate the Model: Called the eval_model function to evaluate performance on the validation set.
+Print Losses: Displayed the training and validation loss after each epoch for monitoring model improvement.
+
+**Save Model**
+Save Model Checkpoint: Saved the trained model parameters to a directory (model_checkpoint) for later use or further fine-tuning.
+Save Tokenizer: Saved the tokenizer to the same directory, ensuring compatibility with the saved model for future predictions.
