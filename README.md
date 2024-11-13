@@ -63,3 +63,22 @@ Format for the generated output:
 3. **Training Loop**:
    - Iterating over batches
    - Forward pass, loss calculation, backpropagation, and weight updates
+
+## Group 5
+
+### Tasks Performed:
+
+### **Streamlit Frontend for Q&A Model**
+
+We have built a simple Streamlit application to interact with the fine-tuned BERT model for Question-Answering. The Streamlit frontend allows users to enter a question, which is then processed by the model to generate an answer.
+
+**Key Steps**:
+
+- **Model and Tokenizer Loading**: The Streamlit app loads the trained BERT model and tokenizer from a local directory (./model_checkpoint).
+
+- **Prediction Function**: The app defines a function get_prediction() that tokenizes the user-input question, feeds it into the model, and retrieves the model's predicted answer along with a confidence score.
+
+- **Streamlit Layout**: The user interface includes:
+An input field for entering a question.
+A button to submit the question and generate an answer.
+Output fields that display the answer and model confidence score.
