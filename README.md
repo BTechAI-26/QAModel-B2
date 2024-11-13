@@ -82,3 +82,19 @@ We have built a simple Streamlit application to interact with the fine-tuned BER
 An input field for entering a question.
 A button to submit the question and generate an answer.
 Output fields that display the answer and model confidence score.
+
+
+Here are the tasks performed in *Step 7* and *Step 8*:
+
+### Step 7: Training and Evaluation
+1. *Set Device*: Specify the device (GPU or CPU) for running the model and move the model to the chosen device.
+2. *Training Loop*:
+   - Loop over the specified number of epochs.
+   - For each epoch:
+     - *Train the Model*: Call the train_epoch function to perform forward and backward propagation, updating model weights based on training data.
+     - *Evaluate the Model*: Call the eval_model function to evaluate performance on the validation set.
+     - *Print Losses*: Display the training and validation loss after each epoch for monitoring model improvement.
+
+### Step 8: Save Model
+1. *Save Model Checkpoint*: Save the trained model parameters to a directory (model_checkpoint) for later use or further fine-tuning.
+2. *Save Tokenizer*: Save the tokenizer to the same directory, ensuring compatibility with the saved model for future predictions.
